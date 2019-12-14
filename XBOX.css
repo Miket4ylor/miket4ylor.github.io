@@ -1,0 +1,266 @@
+﻿/*
+Find me @Jayraydee on twitter!
+Terms and Conditions:
+
+No refunds on digital goods, if you have questions concerning your order please contact us.
+ This purchase grants the Buying organization and its representatives the right to use and display
+ the images for commercial use via streaming, recorded and rebroadcasted media. Your license does 
+not include the right to redistribute copies in anyway, including but not limited to: advertising, 
+stock photography, print sale profits, file sharing, sub-licensing, giveaways, freeware, inclusion 
+in software, or resale of any nature. The purchase of the original files releases The Seller from a
+ny liability due to loss or damage of the images, and releases the Seller from any obligation to 
+maintain copies of any digital file, image, or photograph. You hereby grant to The Seller the right
+to use and publish images, graphics, or media containing the assets in conjunction with the name and
+ likeness of the organization and its representatives to further promote their services, including 
+portfolio, web site, display, advertisement, and editorial use. The Seller agrees to limit the use 
+of these images, graphics, or media to promotional use only.
+*/
+/*BEGIN XBOX Controller Styling*/
+
+.controller.custom{
+    background: url(base.png);
+    height: 657px;
+    width: 781px;
+    background-position-x: 0px;
+    background-repeat:no-repeat;
+}
+.custom.disconnected { /* This class shows an image when the controller is disconnected */
+    background: url(disconnected.png);
+    background-repeat:no-repeat;
+}
+/* This hides the controller's button when disconnected so only the background image remains */ 
+.custom.disconnected div {
+    display: none;
+}
+ .custom .triggers{ /* The triggers are housed inside a div, so this sizes the div properly and positions it */
+    width: 127px;
+    height: 93px;
+    top: 30px;
+    left:10px;
+    position: absolute;
+    background-repeat:no-repeat;
+} 
+.custom .trigger{/* These are the actual triggers themselves */
+    width: 200px;
+    height: 127px;
+    background: url(trigger.png);
+    background-repeat:no-repeat;
+}
+.custom .trigger.left{ 
+    float: left;
+    left:147px;
+    background-position-x: 0px;
+    position: absolute;
+}
+.custom .trigger.right{
+    float: right;
+    width: 200px;
+    height: 127px;
+    top: 0px;
+    left:413px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    background-position-x: -1px;
+    position: absolute;
+}
+.custom .bumper{
+    width: 208px;
+    height: 333px;
+    left: 110px;
+    top: 134px;
+    background: url(bumper.png);
+    opacity: 0;
+    background-repeat:no-repeat;
+    position: absolute;
+}
+.custom .bumper.pressed{ /* The '.pressed' class is used for most buttons to signify they've been pressed */
+    opacity: 1;
+}
+.custom .bumper.right{
+     -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    float: left;
+    left: 464px;
+    top: 134px;
+}
+.custom .bumper.left{
+    float: right;
+}
+/* This is to size and position the containing div for the 
+start and select buttons. */
+.custom .arrows{
+    position: absolute;
+    width: 205px;
+    height: 19px;
+    top: 250px;
+    left: 291px;
+    background-repeat:no-repeat;
+}
+/* Setting the size and CSS sprite for the start adn select buttons */
+.custom .back, .custom .start{
+    background: url(start-select.png);
+    width: 30px;
+    height: 19px;
+    background-repeat:no-repeat;
+}
+.custom .back.pressed{
+    /*background-position-y: -1px;*/
+    top: 25px;
+    left: 27px;
+    width: 35px;
+    opacity: 1;
+}
+.custom .start.pressed{
+    top: 25px;
+    left: 140px;
+    width: 35px;
+    opacity: 1;
+    background-position-x: -36px;
+}
+.custom .back{ /* share */
+    position: absolute;
+    top: -101px;
+    left: -55px;
+    float: left;
+    width: 38px;
+    height: 50px;
+    opacity: 0;
+}
+.custom .start{ /* options */
+    position: absolute;
+    top: -101px;
+    left: 284px;
+    float: right;
+    width: 38px;
+    height: 50px;
+    opacity: 0;
+    background-position: px 0;
+}
+/* Positioning and size of the container for the face buttons */
+
+/* base class used to simplify the sprite mapping */
+.custom .abxy{
+    position: absolute;
+      eight: 657px;
+    width: 781px;
+    background-repeat:no-repeat;
+}
+
+.custom .button{
+    position: absolute;
+}
+.custom .button.pressed{
+    background-position-y: -0px;
+    margin-top: 0px;
+}
+.custom .a.pressed{ /* X on PS4*/
+    background: url(A.png), url(1.png); 
+    height: 657px;
+    width: 781px;
+    background-repeat:no-repeat;
+}
+.custom .b.pressed{ /* circle on PS4*/
+    background: url(B.png), url(4.png); ; 
+    height: 657px;
+    width: 781px;
+    background-repeat:no-repeat;
+}
+.custom .x.pressed{ /* square on PS4*/
+    background: url(X.png); 
+    height: 657px;
+    width: 781px;
+    background-repeat:no-repeat;
+}
+.custom .y.pressed{ /* Triangle on PS4*/
+    background: url(Y.png), url(2.png);  
+    height: 657px;
+    width: 781px;
+    background-repeat:no-repeat;
+}
+
+.custom .sticks{
+    position: absolute;
+    width: 310px;
+    height: 100px;
+    top: 374px;
+    left: 240px;
+    background-repeat:no-repeat;
+}
+.custom .stick{
+    position: absolute;
+    background: url(stick.png);
+    height:88px;
+    width: 88px;
+    background-repeat:no-repeat;
+}
+.custom .stick.pressed.left{
+    background-position-x: -88px;
+}
+.custom .stick.pressed.right{
+    background-position-x: -88px;
+}
+.custom .stick.left{
+    top: -124px;
+    left: -91px;
+}
+.custom .stick.right{
+    top: calc(100% - 105px);
+    left: calc(100% - 100px);
+}
+/* Dpad possitioning and sizing */
+.custom .dpad{
+    height: 889px;
+    width: 1000px;
+    background-repeat:no-repeat;
+}
+.custom .face{
+    background: url(dpad.png);
+    position: absolute;
+}
+.custom .face.right.pressed{
+    background: url(R.png), url(3.png);  
+    height: 889px;
+    width: 1000px;
+    background-repeat:no-repeat;
+}
+.custom .face.left.pressed{
+    background: url(L.png); 
+    height: 889px;
+    width: 1000px;
+    background-repeat:no-repeat;
+}
+.custom .face.up.pressed{
+    background: url(U.png); 
+    height: 889px;
+    width: 1000px;
+    background-repeat:no-repeat;
+}
+.custom .face.down.pressed{ 
+    background: url(D.png); 
+    height: 889px;
+    width: 1000px;
+    background-repeat:no-repeat;
+}
+.custom .trigger-button.left{
+    left: 600px;
+    top: 77px;
+    background-position: 0px 0px;
+    background-repeat:no-repeat; 
+}
+.custom .trigger-button.right{ 
+}
+.custom .trigger-button.left.pressed{  
+}
+.custom .trigger-button.right.pressed{  
+}
+.custom .touchpad.pressed{
+    position:absolute;
+    width: 280px;
+    height: 160px;
+    top: 127px;
+    left: 282px;
+    background: url(touchpad.png);
+    background-repeat:no-repeat; 
+}
+
+/*END XBOX Controller Styling*/
